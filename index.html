@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body class="container mt-5">
+
+    <div>
+        <h3>Nhập vào các số nguyên:</h3>
+        <div class="form-group">
+            <label for="numberInput">Nhập số:</label>
+            <input type="number" class="form-control" id="numberInput">
+            <button class="btn btn-primary mt-2" onclick="addNumber()">Thêm số</button>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h3>Chức năng:</h3>
+        <button class="btn btn-info mt-2" onclick="calculateSumPositive()">1. Tổng số dương</button>
+        <br>
+        <button class="btn btn-info mt-2" onclick="countPositiveNumbers()">2. Đếm số dương</button>
+        <br> 
+        <button class="btn btn-info mt-2" 
+        onclick="findMinNumber()">3. Tìm số nhỏ nhất</button>
+        <br>
+        <button class="btn btn-info mt-2" onclick="findMinPositiveNumber()">4. Tìm số dương nhỏ nhất</button>
+        <br> 
+        <button class="btn btn-info mt-2" onclick="findLastEvenNumber()">5. Tìm số chẵn cuối cùng</button>
+        <br> 
+        <button class="btn btn-info mt-2" onclick="swapValues()">6. Đổi chỗ 2 giá trị</button>
+        <br> 
+        <button class="btn btn-info mt-2" onclick="sortArrayAscending()">7. Sắp xếp mảng (tăng dần)</button>
+        <br> 
+        <button class="btn btn-info mt-2" onclick="findFirstPrimeNumber()">8. Tìm số nguyên tố đầu tiên</button>
+        <br> 
+        <button class="btn btn-info mt-2" onclick="countIntegersInRealArray()">9. Đếm số nguyên trong mảng số thực</button>
+        <br> 
+        <button class="btn btn-info mt-2" onclick="comparePositiveAndNegativeCount()">10. So sánh số lượng số dương và số lượng số âm</button>
+    </div>
+    </div>
+    
+
+    <div class="mt-4">
+        <h3>Kết quả:</h3>
+        <div id="result" class="alert alert-info"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
